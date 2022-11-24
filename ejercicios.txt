@@ -1,6 +1,8 @@
-1) Ejecutar los siguientes 2 comandos:
+1) Ejecutar los siguientes 3 comandos:
 
 use pruebas_mongo;
+
+db.usuarios.drop();
 
 db.usuarios.insertMany([
  { nombre:  "Diego", apellido: "Polverelli", rol: "USER", edad: 44, cursos: [{ nombre: "Programación Backend", dificultad: "Media"}, { nombre: "Introduccióna a JavaScript", dificultad: "Baja"}]},
@@ -19,5 +21,6 @@ db.usuarios.insertMany([
  c) listar los usuarios que hayan realizado cursos con dificultad "Alta"
  d) utilizar el operador $in para agregar una propiedad sexo con valor "masculino", según corresponda; con el mismo filtro, pero utilizando el operador
 $nin, agregar el género "femenino", según corresponda
+ e) eliminar el usuario con apellido "Amato"
 
 
