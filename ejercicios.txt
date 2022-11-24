@@ -1,0 +1,23 @@
+1) Ejecutar los siguientes 2 comandos:
+
+use pruebas_mongo;
+
+db.usuarios.insertMany([
+ { nombre:  "Diego", apellido: "Polverelli", rol: "USER", edad: 44, cursos: [{ nombre: "Programación Backend", dificultad: "Media"}, { nombre: "Introduccióna a JavaScript", dificultad: "Baja"}]},
+ { nombre:  "Luis", apellido: "Saez", rol: "USER", edad: 37, cursos: [{ nombre: "Master en CSS", dificultad: "Media"}, { nombre: "Introduccióna a JavaScript", dificultad: "Baja"}]},
+ { nombre:  "Macarena", apellido: "Rodriguez", rol: "USER", edad: 22, cursos: [{ nombre: "Programación Backend", dificultad: "Media"}, { nombre: "Introduccióna a JavaScript", dificultad: "Baja"},{ nombre: "Master en CSS", dificultad: "Media"}]},
+ { nombre:  "Estela", apellido: "Vignau", rol: "USER", edad: 25, cursos: [{ nombre: "Python sin fronteras", dificultad: "Alta"}, { nombre: "Introduccióna a JavaScript", dificultad: "Baja"},{ nombre: "Master en CSS", dificultad: "Media"}]},
+ { nombre:  "Matias", apellido: "Fasano", rol: "USER", edad: 33, cursos: [{ nombre: "Programación Backend", dificultad: "Media"}, { nombre: "Introduccióna a JavaScript", dificultad: "Baja"},{ nombre: "Master en CSS", dificultad: "Media"},{ nombre: "Python sin fronteras", dificultad: "Alta"}]},
+ { nombre:  "María Jesus", apellido: "Amato", rol: "USER", edad: 29, cursos: [{ nombre: "Master en CSS", dificultad: "Media"}]},
+ { nombre:  "Fernando", apellido: "Rodriguez", rol: "USER", edad: 31, cursos: [{ nombre: "Programación Backend", dificultad: "Media"}, { nombre: "Master en CSS", dificultad: "Media"}]},
+]);
+
+
+2) 
+ a) listar los objetos de la colección usuarios, cuya edad sea superior a los 30 años
+ b) listar los usuarios mayores de 30 años, que hayan realizado el curso denominado "Introducción a JavaScript"
+ c) listar los usuarios que hayan realizado cursos con dificultad "Alta"
+ d) utilizar el operador $in para agregar una propiedad sexo con valor "masculino", según corresponda; con el mismo filtro, pero utilizando el operador
+$nin, agregar el género "femenino", según corresponda
+
+
